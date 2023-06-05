@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#container{
+    margin: auto;
+    width: 60%;
+    background-color: aqua;
+    text-align: center;
+    min-height: 100vh;
+}
+#form{
+    margin: auto;
+    /* border: 2px solid black; */
+    padding-top: 5%;
+}
+#form #input{
+    border-radius: 1rem;
+    padding: 2%;
+    width: 40vh;
+    text-align: center;
+    font-size: 110%;
+}
+h1{
+    padding-top: 5%;
+}
+#submit{
+    padding: 2%;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#tasks{
+    /* background-color: rgba(0, 0, 0, 0.656); */
+    border-radius: 1rem;
+    width: 50%;
+    margin: 2% auto;
+    padding: 1%;
+}
+#submit:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.809);
+}
+.task{
+    color: rgba(0, 0, 0, 0.834);
+    /* border: 2px solid salmon; */
+    margin: 2% auto;
+    background-color: rgba(255, 255, 255, 0.594);
+    border-radius: 1rem;
+    font-size: 30px;
+    display: flex;
+}
+#time{
+    color: rgba(0, 0, 0, 0.721);
+    font-size: 150%;
+    padding-top: 1%;
+    width: 20%;
+    margin: auto;
+    /* margin-top: 1%; */
+}
+.button{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    transition: 0.3s;
+    outline: none;
+    border: 2px solid blue;
+    position: absolute;
+    left: 63%;
+}
+.button:hover{
+    background-color: red;
+}
