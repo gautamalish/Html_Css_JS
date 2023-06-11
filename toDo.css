@@ -1,76 +1,120 @@
-*{
-    margin: 0%;
-    padding: 0%;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu";
 }
-#container{
-    margin: auto;
-    width: 60%;
-    background-color: aqua;
-    text-align: center;
-    min-height: 100vh;
+#container {
+  margin: auto;
+  width: 60%;
+  background-color: #dde6ed;
+  text-align: center;
+  min-height: 100vh;
 }
-#form{
-    margin: auto;
-    /* border: 2px solid black; */
-    padding-top: 5%;
+#form {
+  margin: auto;
+  padding-top: 5%;
 }
-#form #input{
-    border-radius: 1rem;
-    padding: 2%;
-    width: 40vh;
-    text-align: center;
-    font-size: 110%;
+#form #input {
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  padding: 2%;
+  width: 40vh;
+  outline: none;
+  font-size: 110%;
+  border: 1px solid gray;
 }
-h1{
-    padding-top: 5%;
+h1 {
+  padding-top: 5%;
 }
-#submit{
-    padding: 2%;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: 0.4s;
+#submit {
+  padding: 2%;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1.2rem;
+  border: 1px solid gray;
 }
-#tasks{
-    /* background-color: rgba(0, 0, 0, 0.656); */
-    border-radius: 1rem;
-    width: 50%;
-    margin: 2% auto;
-    padding: 1%;
+#tasks {
+  margin: 10px auto;
+  width: 500px;
+  text-align: center;
 }
-#submit:hover{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.809);
+#submit:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.809);
 }
-.task{
-    color: rgba(0, 0, 0, 0.834);
-    /* border: 2px solid salmon; */
-    margin: 2% auto;
-    background-color: rgba(255, 255, 255, 0.594);
-    border-radius: 1rem;
-    font-size: 30px;
+.task {
+  color: rgba(0, 0, 0, 0.834);
+  margin: 2% auto;
+  background-color: rgba(255, 255, 255, 0.594);
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+#time {
+  color: rgba(0, 0, 0, 0.721);
+  font-size: 150%;
+  padding-top: 1%;
+  width: 20%;
+  margin: auto;
+  /* margin-top: 1%; */
+}
+.button {
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  background: #fa4984;
+  font-size: 1.5rem;
+}
+.button:hover {
+  background-color: #fa4984c2;
+}
+
+@media only screen and (max-width: 1000px) {
+  #container {
+    width: 100%;
+  }
+  #form {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #container {
+    width: 100%;
+  }
+  #form {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #container {
+    width: 100%;
+  }
+  #time {
+    width: fit-content;
+    font-size: 1.2em;
+  }
+  #form {
     display: flex;
-}
-#time{
-    color: rgba(0, 0, 0, 0.721);
-    font-size: 150%;
-    padding-top: 1%;
-    width: 20%;
-    margin: auto;
-    /* margin-top: 1%; */
-}
-.button{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    border-radius: 20px;
-    background-color: blue;
-    color: white;
-    transition: 0.3s;
-    outline: none;
-    border: 2px solid blue;
-    position: absolute;
-    left: 63%;
-}
-.button:hover{
-    background-color: red;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+  }
+  #form #input {
+    padding: 18px 25px;
+  }
+  #tasks {
+    width: 80%;
+  }
 }
